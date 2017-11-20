@@ -26,25 +26,6 @@
     <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/js/phoneLibCompiled.js"></script>
     <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/scripts/miaa.js"></script>
 
-    <div id="miaaInit" class="miaa-init">
-        <div id="miaaWrapper" class="miaa-wrapper">
-            <a href="#" id="captureSignInLink" onclick="signMeIn();">signMeIn</a>
-            <a href="#" id="captureProfileLink" onclick="miaa_showEditProfile();" style="display:none">miaa_showEditProfile</a>
-            <a href="#" id="captureSignOutLink" style="display:none" onclick="janrain.capture.ui.endCaptureSession();">janrain.capture.ui.endCaptureSession</a>
-
-            <!-- TODO: Inject display:none here in non-dev environments -->
-            <div style="font-size:0.5em">
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <hr />
-                <div id="debug-info"></div>
-                <div id="flow-version"></div>
-            </div>
-
-            <div id="flow-version"></div>
-
-        </div>
-    </div>
-
     <script>
         function miaa_onCaptureLoginSuccess(result) {
             console.log("miaa_onCaptureLoginSuccess");
