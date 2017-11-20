@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'janrain',
+    modulePrefix: 'miaa-janrain-ember',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
