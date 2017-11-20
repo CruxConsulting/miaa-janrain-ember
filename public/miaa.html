@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--[if gt IE 8]><!-->
+    <link href="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/css/miaa.css" rel="stylesheet">
+    <!--<![endif]-->
+    <!--[if lte IE 8]><link href="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/css/oldie_miaa.css" rel="stylesheet"><![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/js/tether.min.js"></script>
+    <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/js/bootstrap.js"></script>
+    <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/js/phoneLibCompiled.js"></script>
+
+</head>
+
+<body dir="ltr">
+    <div id="miaaInit" class="miaa-init">
+        <div id="miaaWrapper" class="miaa-wrapper">
+            <a href="#" id="captureSignInLink" onclick="signMeIn();">Jestem już klientem</a>
+            <a href="#traditionalRegistrationModal" id="captureRegisterLink" onclick="register();">Nie mam jeszcze konta</a>
+            <a href="#" id="captureProfileLink" onclick="miaa_showEditProfile();" style="display:none">Edycja konta</a>
+            <a href="#" id="captureSignOutLink" style="display:none" onclick="janrain.capture.ui.endCaptureSession();">Wyloguj</a>
+            <div class="background-placeholder">
+                <header>
+                    <div class="container">
+                        <div class="settings col-3 gutter text-right">
+                            &nbsp;
+                        </div>
+                        <div class="brand col-1 sm-fluid">
+                            <a href="index.html"><img src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/img/layout/logo.png" alt="Janssen.tv"></a>
+                        </div>
+                        <div class="main-menu col-2 gutter-right sm-fluid">
+                        </div>
+                    </div>
+                </header>
+
+                <section class="cutout-bg">
+                    <div class="hp-slider-container">
+                        <div class="container">
+                            <div class="col-3 gutter">
+                                <h1 class="header-primary"></h1>
+                            </div>
+                            <div class="col-3" style="padding: 0px;">
+
+                                <div class="big-slider no-slides" style="font-size: 13.6667px;">
+                                    <div class="hex-bg clearfix">
+                                        <div class="hex-slide-text">
+                                            <div class="slider-soon">
+                                                <p class="slider-date">Janssen.TV</p>
+                                                <h2 style="word-wrap: break-word;" class="is-truncated">Knowledge within reach.<br>Coming soon!</h2>
+                                            </div>
+                                        </div>
+                                        <ul class="hex-langs list-clean"></ul>
+                                        <div class="hex-slide-counter">
+                                            <p>
+                                                <span>Pozostało:</span>
+                                                <strong></strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="hex-slides-list list-clean">
+                                        <li class="hex-slides-item pos-cur">
+                                            <img src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/img/content/hex-slider-empty.png" alt="">
+                                            <div class="hex-slide-text">
+                                                <div class="slider-soon">
+                                                    <p class="slider-date">Janssen.TV</p>
+                                                    <h2 style="word-wrap: break-word;" class="is-truncated">Knowledge within reach.<br>Coming soon!</h2>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="cutout-bg">
+                    <div class="container">
+                        <div class="col-3 gutter">
+                            <nav class="foot-links clearfix">
+                                <ul class="list-clean">
+                                    <li><a href="cookie-policy.html">Cookie policy</a></li>
+                                    <li><a href="privacy-policy.html">Privacy policy</a></li>
+                                    <li><a href="terms-of-use.html">Terms of use</a></li>
+                                </ul>
+                                <a href="hp.html"><img src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/img/layout/logo-footer-100.png" alt="Janssen"></a>
+                            </nav>
+                            <div class="footer-claims">
+                                <p>
+                                    © Janssen-Cilag Polska Sp. z o.o. 2015 - Last update: September 23, 2015.<br> This site is published by Janssen-Cilag Polska Sp.z o.o. ul. Iłżecka 24, 02-135 Warsaw, Poland,<br> which is solely responsible for its contents.
+                                    This site is intended for physicians practicing in Europe.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <!-- TODO: Inject display:none here in non-dev environments -->
+            <div style="font-size:0.5em">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <hr />
+                <div id="debug-info"></div>
+                <div id="flow-version"></div>
+            </div>
+
+            <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/scripts/miaa.js"></script>
+
+            <script>
+                function miaa_onCaptureLoginSuccess(result) {
+                    console.log("miaa_onCaptureLoginSuccess");
+                    document.getElementById("captureSignInLink").style.display = 'none';
+                    document.getElementById("captureRegisterLink").style.display = 'none';
+                    document.getElementById("captureSignOutLink").style.display = '';
+                    document.getElementById("captureProfileLink").style.display = '';
+                }
+
+                function miaa_onCaptureSessionFound(result) {
+                    console.log("miaa_onCaptureSessionFound");
+                    document.getElementById("captureSignInLink").style.display = 'none';
+                    document.getElementById("captureRegisterLink").style.display = 'none';
+                    document.getElementById("captureSignOutLink").style.display = '';
+                    document.getElementById("captureProfileLink").style.display = '';
+                }
+
+                function miaa_onCaptureSessionNotFound(){
+                    document.getElementById("captureSignInLink").style.display = '';
+                    document.getElementById("captureRegisterLink").style.display = '';
+                    document.getElementById("captureSignOutLink").style.display = 'none';
+                    document.getElementById("captureProfileLink").style.display = 'none';
+                }
+
+                function miaa_onCaptureRegistrationSuccess(result){
+                    console.log("miaa_onCaptureRegistrationSuccess");
+                }
+
+                function miaa_onCaptureSessionEnded(result) {
+                    console.log("miaa_onCaptureSessionEnded");
+                    miaa_onCaptureSessionNotFound();
+                }
+
+                function miaa_onSecondScreenSaved(){
+                    console.log("miaa_onSecondScreenSaved");
+                }
+
+                function signMeIn() {
+                    document.getElementById('miaaNonModal').style.display = '';
+                    janrain.capture.ui.renderScreen('signIn');
+                }
+
+                function register() {
+                    document.getElementById('miaaNonModal').style.display = '';
+                    janrain.capture.ui.renderScreen('traditionalRegistration');
+                }
+            </script>
+
+
+            <div id="flow-version"></div>
+
+        </div>
+    </div>
+</body>
+</html>
