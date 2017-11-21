@@ -24,60 +24,7 @@
     <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/js/tether.min.js"></script>
     <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/js/bootstrap.js"></script>
     <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/js/phoneLibCompiled.js"></script>
-    <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/scripts/miaa.js"></script>
-
-    <script>
-    // Fires when widget has completed loading
-        // function miaa_onWidgetLoaded(){
-        //   janrain.settings.capture.clientId = 'hrf7zvyde7ms6dph9dd2vr24jqxvxcks';
-        // }
-
-        function miaa_onCaptureLoginSuccess(result) {
-            console.log("miaa_onCaptureLoginSuccess");
-            document.getElementById("captureSignInLink").style.display = 'none';
-            document.getElementById("captureRegisterLink").style.display = 'none';
-            document.getElementById("captureSignOutLink").style.display = '';
-            document.getElementById("captureProfileLink").style.display = '';
-        }
-
-        function miaa_onCaptureSessionFound(result) {
-            console.log("miaa_onCaptureSessionFound");
-            document.getElementById("captureSignInLink").style.display = 'none';
-            document.getElementById("captureRegisterLink").style.display = 'none';
-            document.getElementById("captureSignOutLink").style.display = '';
-            document.getElementById("captureProfileLink").style.display = '';
-        }
-
-        function miaa_onCaptureSessionNotFound(){
-            document.getElementById("captureSignInLink").style.display = '';
-            document.getElementById("captureRegisterLink").style.display = '';
-            document.getElementById("captureSignOutLink").style.display = 'none';
-            document.getElementById("captureProfileLink").style.display = 'none';
-        }
-
-        function miaa_onCaptureRegistrationSuccess(result){
-            console.log("miaa_onCaptureRegistrationSuccess");
-        }
-
-        function miaa_onCaptureSessionEnded(result) {
-            console.log("miaa_onCaptureSessionEnded");
-            miaa_onCaptureSessionNotFound();
-        }
-
-        function miaa_onSecondScreenSaved(){
-            console.log("miaa_onSecondScreenSaved");
-        }
-
-        function signMeIn() {
-            document.getElementById('miaaNonModal').style.display = '';
-            janrain.capture.ui.renderScreen('signIn');
-        }
-
-        function register() {
-            document.getElementById('miaaNonModal').style.display = '';
-            janrain.capture.ui.renderScreen('traditionalRegistration');
-        }
-    </script>
+    <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/scripts/miaa.js?locale=fr_FR"></script>
 
     {{content-for "body-footer"}}
   </body>
