@@ -27,6 +27,11 @@
     <script src="https://cdn-stg.miaaguard.com/jnj_6iQyNXjgZn/widget/pl_pl_ePpmJqDa9W/scripts/miaa.js"></script>
 
     <script>
+    // Fires when widget has completed loading
+        function miaa_onWidgetLoaded(){
+          janrain.settings.capture.clientId = 'hrf7zvyde7ms6dph9dd2vr24jqxvxcks';
+        }
+
         function miaa_onCaptureLoginSuccess(result) {
             console.log("miaa_onCaptureLoginSuccess");
             document.getElementById("captureSignInLink").style.display = 'none';
